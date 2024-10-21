@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Modern Gradient Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #343a40);
+            color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Styling for header */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #f8f9fa;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #f8f9fa;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        /* Hero section */
+        section#hero {
+            margin-top: 100px;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+        }
+
+        section#hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        section#hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 2s ease;
+        }
+
+        /* Project Section */
+        section#projects {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: #212529;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h3 {
+            margin: 0 0 10px;
+            color: #ffc107;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            color: #ced4da;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #343a40;
+            color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Query for Responsiveness */
+        @media (max-width: 768px) {
+            section#projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#hero">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section (About Me) -->
+    <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! My self Syeda Gulzar Bano, a passionate web developer, creating clean, modern, and interactive web experiences for users.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>This is my first project but not the least</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p> focuses on the exploration more and more in coding</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>come soon</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
